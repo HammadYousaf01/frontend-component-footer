@@ -45,40 +45,6 @@ class SiteFooter extends React.Component {
 
     return (
       <div className="wrapper wrapper-footer">
-        <footer id="footer" className="tutor-container">
-          <div className="footer-top">
-            <div className="powered-area">
-              <ul className="logo-list">
-                <li>{intl.formatMessage(messages['footer.poweredby.text'])}</li>
-                <li>
-                  <a href="https://edly.io/tutor/" rel="noreferrer" target="_blank">
-                    <img
-                      src={`${config.LMS_BASE_URL}/theming/asset/images/tutor-logo.png`}
-                      alt={intl.formatMessage(messages['footer.tutorlogo.altText'])}
-                      width="57"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://open.edx.org" rel="noreferrer" target="_blank">
-                    <img
-                      src={logo || `${config.LMS_BASE_URL}/theming/asset/images/openedx-logo.png`}
-                      alt={intl.formatMessage(messages['footer.logo.altText'])}
-                      width="79"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <span className="copyright-site">{intl.formatMessage(messages['footer.copyright.text'])}</span>
-          {showLanguageSelector && (
-            <LanguageSelector
-              options={supportedLanguages}
-              onSubmit={onLanguageSelected}
-            />
-          )}
-        </footer>
       </div>
     );
   }
