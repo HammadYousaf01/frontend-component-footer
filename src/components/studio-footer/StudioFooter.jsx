@@ -8,7 +8,6 @@ import {
   Button,
   Container,
   Hyperlink,
-  Image,
   TransitionReplace,
 } from '@openedx/paragon';
 import { ExpandLess, ExpandMore, Help } from '@openedx/paragon/icons';
