@@ -33,6 +33,7 @@ const StudioFooter = ({
   const intl = useIntl();
   const [isOpen, setIsOpen] = useState(false);
   const { config } = useContext(AppContext);
+
   const { containerClassName, ...restContainerProps } = containerProps || {};
 
   return (
