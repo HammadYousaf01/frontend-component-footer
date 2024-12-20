@@ -12,6 +12,11 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+    - name: Ensure Correct Branch
+      run: |
+        git fetch --all
+        git checkout redwood/indigo
+        git reset --hard origin/redwood/indigo
     - name: Setup Nodejs Env
       run: echo "NODE_VER=`cat .nvmrc`" >> $GITHUB_ENV
     - name: Setup Node.js
